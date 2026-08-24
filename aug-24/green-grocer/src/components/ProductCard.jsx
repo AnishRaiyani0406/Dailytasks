@@ -35,7 +35,7 @@ const ProductCard = ({ product, onSelect, onAddToCart }) => {
           </span>
           <button 
             onClick={(e) => {
-              e.stopPropagation() // Stops card click from firing (doesn't open modal)
+              e.stopPropagation()
               onAddToCart(product)
             }}
             className='bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-colors'

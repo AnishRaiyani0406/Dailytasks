@@ -34,7 +34,7 @@ const WishList = () => {
             key={product.id} 
             className='bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow flex flex-col relative'
           >
-            {/* Remove Button */}
+            
             <button 
               className='absolute top-3 right-3 bg-white/90 hover:bg-red-50 text-gray-400 hover:text-red-500 w-7 h-7 rounded-full shadow-sm flex items-center justify-center text-sm transition-colors z-10'
               title='Remove from wishlist'
@@ -42,7 +42,7 @@ const WishList = () => {
               ✕
             </button>
 
-            {/* Product Image */}
+            
             <div className='h-48 w-full overflow-hidden bg-gray-100'>
               <img 
                 src={product.image} 
@@ -51,7 +51,7 @@ const WishList = () => {
               />
             </div>
 
-            {/* Product Details */}
+            
             <div className='p-4 flex flex-col justify-between '>
               <div>
                 <span className='text-xs font-semibold text-emerald-600 uppercase tracking-wider'>
@@ -66,8 +66,7 @@ const WishList = () => {
                 <span className='text-lg font-bold text-gray-900'>
                   {product.price}
                 </span>
-               
-                
+                              
               </div>
             </div>
           </div>

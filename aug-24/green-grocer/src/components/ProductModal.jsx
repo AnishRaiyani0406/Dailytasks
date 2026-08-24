@@ -25,18 +25,22 @@ const ProductModal = ({ product, onClose, onAddToCart }) => {
 
         
         <div className='h-64 w-full bg-gray-100 relative'>
+          
           <img 
             src={product.image} 
             alt={product.name} 
             className='w-full h-full object-cover'
           />
+
           <span className='absolute bottom-3 left-3 bg-emerald-500 text-white text-xs font-semibold px-3 py-1 rounded-full'>
             {product.category}
           </span>
+
         </div>
 
         
         <div className='p-6'>
+          
           <h3 className='text-2xl font-bold text-gray-800 mb-2'>
             {product.name}
           </h3>
@@ -47,11 +51,14 @@ const ProductModal = ({ product, onClose, onAddToCart }) => {
 
           
           <div className='flex items-center justify-between pt-4 border-t border-gray-100'>
+            
             <div>
+              
               <span className='text-xs text-gray-400 block uppercase font-medium'>Price</span>
               <span className='text-2xl font-extrabold text-gray-900'>
                 {product.price}
               </span>
+              
             </div>
 
             <button 

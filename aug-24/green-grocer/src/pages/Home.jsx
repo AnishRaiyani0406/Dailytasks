@@ -124,7 +124,7 @@ const Home = () => {
         </section>
       </main>
 
-      {/* Product Detail Modal Popup */}
+      
       {selectedProduct && (
         <div 
           onClick={() => setSelectedProduct(null)}
@@ -134,7 +134,7 @@ const Home = () => {
             onClick={(e) => e.stopPropagation()} 
             className='bg-white rounded-2xl max-w-md w-full overflow-hidden shadow-2xl relative'
           >
-            {/* Close Button */}
+            
             <button 
               onClick={() => setSelectedProduct(null)}
               className='absolute top-3 right-3 bg-gray-100 hover:bg-gray-200 text-gray-600 w-8 h-8 rounded-full flex items-center justify-center font-bold z-10'
@@ -142,7 +142,7 @@ const Home = () => {
               ✕
             </button>
 
-            {/* Modal Image */}
+            
             <div className='h-56 w-full bg-gray-100'>
               <img 
                 src={selectedProduct.image} 
@@ -151,7 +151,7 @@ const Home = () => {
               />
             </div>
 
-            {/* Modal Body */}
+            
             <div className='p-6'>
               <span className='text-xs font-semibold text-emerald-600 uppercase tracking-wider'>
                 {selectedProduct.category}
